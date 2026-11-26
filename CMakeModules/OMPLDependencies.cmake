@@ -29,7 +29,7 @@ set_package_properties(flann PROPERTIES
     URL "https://github.com/mariusmuja/flann"
     PURPOSE "If detetected, FLANN can be used for nearest neighbor queries by OMPL.")
 find_package(flann CONFIG 1.9.2 QUIET)
-if (FLANN_FOUND)
+if (flann_FOUND)
     set(OMPL_HAVE_FLANN 1)
 else ()
     set(OMPL_HAVE_FLANN 0)
